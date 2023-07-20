@@ -5,6 +5,12 @@ const app = createApp({
         return {
             tasks: []
         }
+    },
+    created(){
+        axios.get('http://localhost/php-todo-list-json/api/tasks/')
+        .then(res => {
+            this.tasks = res.data;
+        });
     }
 })
 

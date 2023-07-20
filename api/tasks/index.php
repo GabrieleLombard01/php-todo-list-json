@@ -1,6 +1,6 @@
 <?php
 // Initial DATA:
-$tasks = ["HTML", "CSS", "Responsive design", "Javascript", "PHP"];
+$tasks = ["Lavare il cane", "Comprare le zucchine", "Comprare pastiglie lavastoviglie", "Colloquio di lavoro", "Spazzare il cortile"];
 
 // Avviso chi mi riceve che la risposta è in json
 header('Content-Type: application/json');
