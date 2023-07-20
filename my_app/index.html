@@ -22,20 +22,22 @@
 	<title>PHP ToDo List JSON</title>
 </head>
 <body>
-<div class="container-sm container-md text-white bg-dark rounded-3">
-    <!--LIST:-->
-    <div class="list_container">
-        <h1 class="ps-4 pb-2">Todo List</h1>
-        <ul>
-            <li>First task</li>
-        </ul>
+    <div id="app">
+        <div class="container-sm container-md text-white bg-dark rounded-3">
+            <!--LIST:-->
+            <div class="list_container">
+                <h1 class="ps-4 pb-2">Todo List</h1>
+                <ul>
+                    <li v-for="task in tasks" :key="task">{{task}}</li>
+                </ul>
+            </div>
+            <!--FORM-->
+            <form class="text-center pb-5" action="">
+                <input class="rounded-2 " type="text">
+                <button>Inserisci</button>
+            </form>
+        </div>
     </div>
-    <!--FORM-->
-    <form class="text-center pb-5" action="">
-        <input class="rounded-2 " type="text">
-        <button>Inserisci</button>
-    </form>
-</div>
 <!--! -MY JS- -->
 <script src="./js/main.js"></script>
 </body>
