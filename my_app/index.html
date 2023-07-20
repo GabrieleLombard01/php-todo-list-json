@@ -32,9 +32,9 @@
                 </ul>
             </div>
             <!--FORM-->
-            <form class="text-center pb-5" action="">
-                <input class="rounded-2 " type="text">
-                <button>Inserisci</button>
+            <form @submit.prevent="addTask" class="text-center pb-5" action="">
+                <input v-model.trim="newTask" class="rounded-2 " type="text">
+                <button type="submit">Inserisci</button>
             </form>
         </div>
     </div>

@@ -3,11 +3,17 @@ const {createApp} = Vue;
 const app = createApp({
     data(){
         return {
-            tasks: []
+            tasks: [],
+            newTask: ''
+        }
+    },
+    methods:{
+        addTask(){
+            console.log(this.newTask);
         }
     },
     created(){
-        axios.get('https://localhost/php-todo-list-json/api/tasks/')
+        axios.get('http://localhost/php-todo-list-json/api/tasks/')
         .then(res => {
             this.tasks = res.data;
         });
