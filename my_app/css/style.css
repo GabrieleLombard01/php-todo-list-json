@@ -10,5 +10,25 @@
 /*Pseudo-classes*/
 
 /*Generics*/
-
+body{
+    background-color: rgb(55, 55, 55);
+}
+ul li{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 5px;
+    border: solid grey 1px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+    right: 6px;
+    margin-top: 5px;
+}
 /*Utilties*/
+.list_container{
+    padding: 20px;
+    margin: 80px auto;
+    overflow-y: scroll;
+    max-height: 600px;
+}
