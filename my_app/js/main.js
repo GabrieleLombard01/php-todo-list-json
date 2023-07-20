@@ -16,6 +16,7 @@ const app = createApp({
             axios.post('http://localhost/php-todo-list-json/api/tasks/', data, config )
             .then(res => {
                 this.tasks = res.data;
+                this.newTask = '';
             });
         }
     },
