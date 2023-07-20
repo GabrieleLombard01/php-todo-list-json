@@ -12,7 +12,11 @@ $tasks = json_decode($json_data, true);
 $new_task = $_POST['task'] ?? null;
 if ($new_task) {
     $tasks[] = $new_task;
+
+    $json_tasks = json_encode($tasks);
+    file_put_contents($database_path, $json_tasks);
 }
+
 
 // Avviso chi mi riceve che la risposta è in json
 header('Content-Type: application/json');
