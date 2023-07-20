@@ -1,5 +1,7 @@
-//JS RESET
-console.log('JS OK')
+const {createApp} = Vue;
 
-//Vue RESET
-console.log('Vue OK', Vue);
+const app = createApp({
+
+})
+
+app.mount('#app')
